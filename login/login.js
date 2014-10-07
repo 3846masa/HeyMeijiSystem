@@ -1,6 +1,7 @@
 // change title
 document.title = document.title.replace(/Oh-o!/,'Hey!');
 document.querySelector('img[alt="Oh-o!Meiji"]').src = chrome.extension.getURL('/imgs/logo.svg');
+document.querySelector('#mainVisualSection').style.backgroundImage = 'url("'+chrome.extension.getURL('/imgs/login/nakano.png')+'")';
 
 // set error message
 if (location.search.substr(1) === "sessionTimeout&passwordInvalid") {
