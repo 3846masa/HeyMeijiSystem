@@ -21,6 +21,11 @@
       "matches": ["https://com-web.mind.meiji.ac.jp/SSO/icpn200"],
       "js": ["login/loginError.js"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/classweb*"],
+      "js": ["ical/FileSaver.js","ical/ical.js","ical/makeICal.js"],
+      "run_at": "document_idle"
     }
   ],
 
