@@ -1,0 +1,39 @@
+p.input {
+  text-align: center;
+}
+
+p.input > input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 2px solid #b3e5fc;
+  font-size: 150%;
+}
+
+p.input > input:focus {
+  outline: 0;
+}
+
+p.input > input + span {
+  display: inline-block;
+  position: relative;
+  background: #29b6f6;
+  width: 1px;
+  height: 2px;
+  bottom: 11px;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+p.input > input:focus + span {
+  width: 100%;
+  visibility: visible;
+}
+
+form > button.submit {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}

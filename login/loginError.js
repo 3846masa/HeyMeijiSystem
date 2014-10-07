@@ -1,0 +1,1 @@
+location.href = 'https://oh-o2.meiji.ac.jp/portal/index?sessionTimeout&passwordInvalid';
