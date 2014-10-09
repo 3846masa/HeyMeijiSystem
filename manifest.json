@@ -13,7 +13,7 @@
   "content_scripts": [
     {
       "matches": ["https://oh-o2.meiji.ac.jp/portal/index*"],
-      "js": ["login/login.js"],
+      "js": ["plugins/sizzle.min.js", "login/login.js"],
       "css": ["login/login.css"],
       "run_at": "document_idle"
     },
@@ -24,7 +24,12 @@
     },
     {
       "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/classweb*"],
-      "js": ["ical/FileSaver.js","ical/ical.js","ical/makeICal.js"],
+      "js": ["plugins/sizzle.min.js", "plugins/FileSaver.js","ical/ical.js","ical/makeICal.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/classweb*"],
+      "js": ["plugins/html2canvas.min.js", "plugins/jspdf.min.js", "timeTablePDF/timeTablePDF.js"],
       "run_at": "document_idle"
     }
   ],
