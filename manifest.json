@@ -23,6 +23,12 @@
       "run_at": "document_start"
     },
     {
+      "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/", "https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/home"],
+      "js": ["plugins/sizzle.min.js", "libraryDue/libraryDue.js"],
+      "css": ["libraryDue/libraryDue.css"],
+      "run_at": "document_idle"
+    },
+    {
       "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/classweb*"],
       "js": ["plugins/sizzle.min.js", "plugins/FileSaver.js","ical/ical.js","ical/makeICal.js"],
       "run_at": "document_idle"

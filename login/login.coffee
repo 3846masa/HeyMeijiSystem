@@ -88,7 +88,7 @@ loginForm.addEventListener 'submit', (event)->
   else
     event.preventDefault()
 
-  login = new XMLHttpRequest();
+  login = new XMLHttpRequest()
   login.responseType = 'document'
   login.addEventListener 'load', ->
     if @responseXML.title.match /システム・メッセージ/

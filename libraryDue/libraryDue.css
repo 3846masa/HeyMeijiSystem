@@ -1,0 +1,52 @@
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList {
+    margin: 0 0 20px;
+    padding: 0 10px;
+    background: #f6f6fe;
+    *background-color: transparent
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dt.title {
+    position: relative;
+    margin: 0 -10px 8px;
+    background: url("/ohm01/skin/common/css/../img/bg_indexincidental_title.gif") left top no-repeat
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dt.title span {
+    display: block;
+    padding: 15px 0 5px 45px;
+    margin: -8px 0;
+    background: url("https://oh-o2.meiji.ac.jp/ohm01/skin/common/img/ico_information_class.png") 2px 0 no-repeat;
+    color: #fff;
+    font-weight: bold;
+    font-size: 117%
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dl dt {
+    padding: 5px;
+    margin: 1px -9px 0;
+    background: #e8e5dd;
+    font-weight: bold
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dl dd {
+    padding: 10px 0 11px;
+    background: #f6f6fe url("/ohm01/skin/common/css/../img/dotline_horizontal.gif") left bottom repeat-x;
+    *margin: 0 -10px;
+    *padding: 10px 10px 11px
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dl dd:last-child {
+    padding: 10px 0;
+    background-image: none;
+    *padding: 10px 10px 10px
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dl dd a {
+    display: block;
+    padding: 0 0 0 15px;
+    background: url("/ohm01/skin/common/css/../img/ico_default_list.png") 0 0 no-repeat
+}
+
+body #pageBodyArea #pageBodyBlock #indexIncidental dl#bookDueList dl dd a:hover {
+    background-image: url("/ohm01/skin/common/css/../img/ico_default_list_ov.png")
+}
