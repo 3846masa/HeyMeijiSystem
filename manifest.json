@@ -37,6 +37,13 @@
       "matches": ["https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/classweb*"],
       "js": ["plugins/html2canvas.min.js", "plugins/jspdf.min.js", "timeTablePDF/timeTablePDF.js"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://oh-o2.meiji.ac.jp/portal/oh-o_meiji/*",
+        "https://oh-o2.meiji.ac.jp/classweb/*"],
+      "js": ["importantInfo/importantInfo.js"],
+      "run_at": "document_idle"
     }
   ],
 
