@@ -44,6 +44,12 @@
         "https://oh-o2.meiji.ac.jp/classweb/*"],
       "js": ["importantInfo/importantInfo.js"],
       "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://oh-o2.meiji.ac.jp/classweb/mod/reportcw/submission.php*"],
+      "js": ["validSubmit/validSubmit.js"],
+      "run_at": "document_idle"
     }
   ],
 
