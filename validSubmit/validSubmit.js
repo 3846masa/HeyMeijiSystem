@@ -29,10 +29,10 @@
 
       if (file_name == null) continue;
       if (file_name.match(/^[~\.]/) || file_name.match(/~$/)) {
-        var ret = confirm("\""+file_name+"\"はバックアップファイルの可能性があります。\n投稿をキャンセルしますか？");
-        if ( ret === true ){
+        var ret = confirm("\""+file_name+"\"はバックアップファイルの可能性があります。\nこれで提出しますか？");
+        if ( ret === false ){
           $$('button', node)[0].click();
-          alert("ファイルをキャンセルしました。投稿しなおしてください。");
+          alert("ファイルをキャンセルしました。提出しなおしてください。");
           return;
         }
       }
