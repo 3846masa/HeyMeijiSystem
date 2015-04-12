@@ -84,7 +84,7 @@
       for (period in table) {
         infos = table[period];
         week = weekList.indexOf(weekName);
-        dateStr = new Date(OPTS['start'].getTime() + ((week + 8 - OPTS['start'].getDay()) % 7) * 1000 * 60 * 60).toDateString();
+        dateStr = new Date(OPTS['start'].getTime() + ((week + 8 - OPTS['start'].getDay()) % 7) * 1000 * 60 * 60 * 24).toDateString();
         if ((infos['subject'] != null)) {
           event = {};
           event.dtstart = new Date("" + dateStr + " " + periodTable[period]['start']).toISOString();

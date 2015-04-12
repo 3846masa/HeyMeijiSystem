@@ -61,7 +61,7 @@ makeICal = ->
   for weekName, table of timeTable
     for period, infos of table
       week = weekList.indexOf(weekName)
-      dateStr = new Date(OPTS['start'].getTime()+((week+8-OPTS['start'].getDay())%7)*1000*60*60).toDateString()
+      dateStr = new Date(OPTS['start'].getTime()+((week+8-OPTS['start'].getDay())%7)*1000*60*60*24).toDateString()
 
       if (infos['subject']?)
         event = {}
